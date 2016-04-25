@@ -16,4 +16,17 @@ class CommenTool: NSObject {
         
         return image
     }
+    
+    class func createImageWithColorAndSize(color:UIColor,size:CGSize)->UIImage {
+        let rect = CGRectMake(0, 0, size.width, size.height)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        CGContextSetFillColorWithColor(context, color.CGColor)
+        CGContextFillRect(context, rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+    
+    
 }

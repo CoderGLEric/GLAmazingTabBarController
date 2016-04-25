@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1250D2B41CCDEB6200581B3F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250D2B31CCDEB6200581B3F /* MainNavigationController.swift */; };
+		1250D2B61CCDF62E00581B3F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250D2B51CCDF62E00581B3F /* TestViewController.swift */; };
 		12766DBC1CC87A6B00C3302F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12766DBB1CC87A6B00C3302F /* AppDelegate.swift */; };
 		12766DC11CC87A6B00C3302F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12766DBF1CC87A6B00C3302F /* Main.storyboard */; };
 		12766DC31CC87A6B00C3302F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12766DC21CC87A6B00C3302F /* Assets.xcassets */; };
@@ -20,11 +22,9 @@
 		12766DF71CC895DA00C3302F /* ThirdHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12766DF61CC895DA00C3302F /* ThirdHomeViewController.swift */; };
 		12766DF91CC895E500C3302F /* ForthHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12766DF81CC895E500C3302F /* ForthHomeViewController.swift */; };
 		12766DFC1CC89B3100C3302F /* Pch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12766DFB1CC89B3100C3302F /* Pch.swift */; };
-		12766E001CC8B1CF00C3302F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12766DFF1CC8B1CF00C3302F /* MainNavigationController.swift */; };
 		12766E021CC8B4B100C3302F /* FiveHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12766E011CC8B4B100C3302F /* FiveHomeViewController.swift */; };
 		12766E051CC8BA2B00C3302F /* CommenTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12766E041CC8BA2B00C3302F /* CommenTool.swift */; };
 		129AA0981CCA1EFE00799ED8 /* AnimationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AA0971CCA1EFE00799ED8 /* AnimationTabBarController.swift */; };
-		12FA7AA51CCDB65C009BF55D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FA7AA41CCDB65C009BF55D /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1250D2B31CCDEB6200581B3F /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationController.swift; path = Personal/BaseViewController/RootViewController/MainNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		1250D2B51CCDF62E00581B3F /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		12766DB81CC87A6B00C3302F /* Personal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Personal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12766DBB1CC87A6B00C3302F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12766DC01CC87A6B00C3302F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,11 +66,9 @@
 		12766DF61CC895DA00C3302F /* ThirdHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdHomeViewController.swift; sourceTree = "<group>"; };
 		12766DF81CC895E500C3302F /* ForthHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthHomeViewController.swift; sourceTree = "<group>"; };
 		12766DFB1CC89B3100C3302F /* Pch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pch.swift; path = TabBarController/Pch.swift; sourceTree = "<group>"; };
-		12766DFF1CC8B1CF00C3302F /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationController.swift; path = ../RootViewController/MainNavigationController.swift; sourceTree = "<group>"; };
 		12766E011CC8B4B100C3302F /* FiveHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveHomeViewController.swift; sourceTree = "<group>"; };
 		12766E041CC8BA2B00C3302F /* CommenTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommenTool.swift; sourceTree = "<group>"; };
 		129AA0971CCA1EFE00799ED8 /* AnimationTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTabBarController.swift; sourceTree = "<group>"; };
-		12FA7AA41CCDB65C009BF55D /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,7 @@
 				12766DF61CC895DA00C3302F /* ThirdHomeViewController.swift */,
 				12766DF81CC895E500C3302F /* ForthHomeViewController.swift */,
 				12766E011CC8B4B100C3302F /* FiveHomeViewController.swift */,
-				12FA7AA41CCDB65C009BF55D /* TestViewController.swift */,
+				1250D2B51CCDF62E00581B3F /* TestViewController.swift */,
 			);
 			path = RootViewController;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 		12FA7AA61CCDBCE5009BF55D /* MainNavigationViewController */ = {
 			isa = PBXGroup;
 			children = (
-				12766DFF1CC8B1CF00C3302F /* MainNavigationController.swift */,
+				1250D2B31CCDEB6200581B3F /* MainNavigationController.swift */,
 			);
 			path = MainNavigationViewController;
 			sourceTree = "<group>";
@@ -329,12 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12766E001CC8B1CF00C3302F /* MainNavigationController.swift in Sources */,
 				12766DF51CC895CB00C3302F /* SecondHomeViewController.swift in Sources */,
 				12766DEF1CC8954500C3302F /* BaseViewController.swift in Sources */,
 				12766DF91CC895E500C3302F /* ForthHomeViewController.swift in Sources */,
 				12766DF71CC895DA00C3302F /* ThirdHomeViewController.swift in Sources */,
-				12FA7AA51CCDB65C009BF55D /* TestViewController.swift in Sources */,
+				1250D2B41CCDEB6200581B3F /* MainNavigationController.swift in Sources */,
+				1250D2B61CCDF62E00581B3F /* TestViewController.swift in Sources */,
 				12766E021CC8B4B100C3302F /* FiveHomeViewController.swift in Sources */,
 				129AA0981CCA1EFE00799ED8 /* AnimationTabBarController.swift in Sources */,
 				12766DBC1CC87A6B00C3302F /* AppDelegate.swift in Sources */,

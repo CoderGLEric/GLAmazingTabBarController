@@ -12,7 +12,6 @@ class FirstHomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.greenColor();
         layoutViews()
     }
     
@@ -20,7 +19,7 @@ class FirstHomeViewController: BaseViewController {
         let btn = UIButton(type: .System)
         btn.frame = CGRectMake(100, 100, 100, 100)
         btn.setTitle("测试", forState: UIControlState.Normal)
-        btn.addTarget(self, action: "click", forControlEvents: UIControlEvents.TouchUpInside)
+        btn.addTarget(self, action: #selector(FirstHomeViewController.click), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(btn)
     }
     

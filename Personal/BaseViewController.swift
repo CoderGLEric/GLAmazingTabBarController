@@ -16,7 +16,7 @@ class BaseViewController: UIViewController {
         backBtn.setImage(UIImage(named: "nav_back_normal"), forState: .Normal)
         backBtn.setTitle("返回", forState: UIControlState.Normal)
         backBtn.setTitleColor(UIColor.redColor(), forState: .Normal)
-        backBtn.addTarget(self, action: "backBtnClick", forControlEvents: .TouchUpInside)
+        backBtn.addTarget(self, action: #selector(BaseViewController.backBtnClick), forControlEvents: .TouchUpInside)
         backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
         backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0)
         let btnW: CGFloat = SCREEN_WIDTH > 375.0 ? 50 : 44
@@ -28,6 +28,11 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
+        self.tabBarController?.navigationItem.leftBarButtonItem = nil
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.hidesBackButton = true
+        
     }
     
     func initLeftNavigationBackButton() {
