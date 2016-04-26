@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class BaseViewController: UIViewController {
 
@@ -28,17 +29,13 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
-        self.tabBarController?.navigationItem.leftBarButtonItem = nil
-        self.tabBarController?.navigationItem.hidesBackButton = true
-        self.navigationItem.leftBarButtonItem = nil
-        self.navigationItem.hidesBackButton = true
-        
+        self.navigationController?.navigationBar.translucent = false
     }
     
     func initLeftNavigationBackButton() {
         let barItem = UIBarButtonItem(customView: backBtn)
         self.navigationItem.leftBarButtonItem = barItem
-    }
+    }  
     
     func backBtnClick() {
         self.navigationController!.popViewControllerAnimated(true)

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+
 @objc(SecondHomeViewController)
 class SecondHomeViewController: BaseViewController {
 
@@ -14,22 +16,18 @@ class SecondHomeViewController: BaseViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.redColor();
         // Do any additional setup after loading the view.
+        getInfoFromServer()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func getInfoFromServer(){
+        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo":"bar"]).responseJSON { (response) in
+            print(response.request)
+            print(response.response)
+            print(response.data)
+            print(response.result)
+            if let JSON = response.result.value {
+                print("JSON\(JSON)")
+            }
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

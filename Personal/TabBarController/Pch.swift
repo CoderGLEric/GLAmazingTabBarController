@@ -8,7 +8,8 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
-let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
-let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height
+public let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
+public let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height
 
