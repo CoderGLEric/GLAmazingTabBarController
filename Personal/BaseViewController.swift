@@ -28,7 +28,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
-        self.navigationController?.navigationBar.translucent = false
+        
     }
     
     func initLeftNavigationBackButton() {

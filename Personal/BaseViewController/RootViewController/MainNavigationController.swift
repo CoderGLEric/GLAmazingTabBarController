@@ -15,7 +15,6 @@ class MainNavigationController: UINavigationController {
         
         self.navigationBar.setBackgroundImage(CommenTool.createImageWithColorAndSize(UIColor.greenColor(), size: CGSizeMake(SCREEN_WIDTH, 64.0)), forBarMetrics: .Default)
         interactivePopGestureRecognizer!.delegate = nil
-        
     }
     
     override func pushViewController(viewController: UIViewController, animated: Bool) {
