@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120F11451CD19FB000E68C51 /* NetWorkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120F11441CD19FB000E68C51 /* NetWorkingTool.swift */; };
+		124642EF1CCF5FFE002D7B7C /* ShareInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124642EE1CCF5FFE002D7B7C /* ShareInstance.swift */; };
 		1250D2B41CCDEB6200581B3F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250D2B31CCDEB6200581B3F /* MainNavigationController.swift */; };
 		1250D2B61CCDF62E00581B3F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250D2B51CCDF62E00581B3F /* TestViewController.swift */; };
 		1250D2B81CCE031600581B3F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1250D2B71CCE031600581B3F /* Alamofire.framework */; };
@@ -62,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		120F11441CD19FB000E68C51 /* NetWorkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkingTool.swift; sourceTree = "<group>"; };
+		124642EE1CCF5FFE002D7B7C /* ShareInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareInstance.swift; sourceTree = "<group>"; };
 		1250D2B31CCDEB6200581B3F /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationController.swift; path = Personal/BaseViewController/RootViewController/MainNavigationController.swift; sourceTree = SOURCE_ROOT; };
 		1250D2B51CCDF62E00581B3F /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		1250D2B71CCE031600581B3F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/Personal-eurfnohkngsmpmddzyrmcutgezmy/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
@@ -119,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124642ED1CCF5FE7002D7B7C /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				124642EE1CCF5FFE002D7B7C /* ShareInstance.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		12766DAF1CC87A6B00C3302F = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +156,7 @@
 		12766DBA1CC87A6B00C3302F /* Personal */ = {
 			isa = PBXGroup;
 			children = (
+				124642ED1CCF5FE7002D7B7C /* Test */,
 				12766E031CC8B9FA00C3302F /* Tools */,
 				12766DF01CC8956200C3302F /* BaseViewController */,
 				12766DE91CC87C4300C3302F /* TabBarController */,
@@ -211,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				12766E041CC8BA2B00C3302F /* CommenTool.swift */,
+				120F11441CD19FB000E68C51 /* NetWorkingTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -424,6 +438,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				120F11451CD19FB000E68C51 /* NetWorkingTool.swift in Sources */,
+				124642EF1CCF5FFE002D7B7C /* ShareInstance.swift in Sources */,
 				12766DF51CC895CB00C3302F /* SecondHomeViewController.swift in Sources */,
 				12766DEF1CC8954500C3302F /* BaseViewController.swift in Sources */,
 				12766DF91CC895E500C3302F /* ForthHomeViewController.swift in Sources */,
@@ -579,7 +595,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Personal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GL.Personal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,7 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Personal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GL.Personal;
 				PRODUCT_NAME = "$(TARGET_NAME)";

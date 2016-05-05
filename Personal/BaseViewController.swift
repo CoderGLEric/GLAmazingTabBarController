@@ -35,7 +35,7 @@ class BaseViewController: UIViewController {
     func initLeftNavigationBackButton() {
         let barItem = UIBarButtonItem(customView: backBtn)
         self.navigationItem.leftBarButtonItem = barItem
-    }  
+    }
     
     func backBtnClick() {
         self.navigationController!.popViewControllerAnimated(true)
